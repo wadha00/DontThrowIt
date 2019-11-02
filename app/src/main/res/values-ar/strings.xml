@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DontThrowIt</string>
+    <string name="home">الرئيسية</string>
+    <string name="scan">مسح</string>
+    <string name="more">المزيد</string>
+
+    <string name="PermissionGranted">تم منح التصريح</string>
+    <string name="PermissionDenied">طلب الاذن مرفوض</string>
+    <string name="makeUp">ميك أب</string>
+    <string name="perfumes">عطور</string>
+    <string name="skinCare">العناية بالبشرة</string>
+    <string name="hair">شعر</string>
+    <string name="makeUpSubTitle">أحمر الشفاه ، كريم اساس ، ايلاينر</string>
+    <string name="perfumesSubTitle">عطر ، بودي سبلاش ، أو دو تواليت ،</string>
+    <string name="skinCareSubTitle">منظف ,كريم, ماسك, مقشر</string>
+    <string name="hairSubTitle">شامبو ، مكيف ، علاجات الشعر</string>
+    <string name="myActivity">نشاطي</string>
+    <string name="historyScan">الارشيف</string>
+    <string name="other">اخرى</string>
+    <string name="aboutUs">من نحن</string>
+    <string name="setting">الاعدادت</string>
+    <string name="contactUs">تواصل معنا</string>
+    <string name="shareApp">شارك التطبيق</string>
+    <string name="rateApp">قيم التطبيق</string>
+    <string name="arabic">العربية</string>
+    <string name="english">الانجليزية</string>
+    <string name="appLanguage">اللغات</string>
+    <string name="whoWeAre">من نحن ؟</string>
+    <string name="whoWeAreSubTitle">يطلق على تطبيق مشروعنا (لا ترمي!). الغرض الرئيسي لمشروعنا يأتي من ذلك هو الاسم الذي يجب ألا نلقي به أي عنصر غير ضروري ومساعدة الأشخاص الذين لا يستطيعون الحصول على احتياجاتهم في أجهزة الكمبيوتر بسعر مناسب. بالإضافة إلى أننا نقدم للعملاء طريقة للتحقق من توفر أي عنصر متعلق بمكونات أجهزة الكمبيوتر عن طريق مسح رمز شريط العنصر أو البحث باسمه ثم قراءة الوصف والاتصال بالمستخدم الذي يعلن عن هذا العنصر بطريقة سهلة. تم إنشاؤها بواسطة وضاح النصر آيات عبد الرحيم تسنيم الكندري فاطمة الرمح الإشراف د. أسماء الناقي</string>
+    <string name="OriginalProduct">Original Product</string>
+    <string name="successDetials">This product is a original product from the manufacturerYou can know more details if you pressing on the product details</string>
+    <string name="productDetails">Product details</string>
+    <string name="rescan">Rescan</string>
+    <string name="callUs">Call us</string>
+    <string name="send">Send</string>
+
+    <string name="subject">عنوان الرسالة</string>
+    <string name="message">الرسالة</string>
+    <string name="messageText">نص الرسالة...</string>
+    <string name="Email">البريد الالكترونى</string>
+
+    <!--- - - - - - - - - validation - - - - - - - - - - - - -  -->
+
+    <string name="EnterPass">من فضلك قم بادخال كلمة المرور</string>
+    <string name="invalidPass">كلمة المرور غير صحيحة</string>
+
+    <string name="passConfirm">من فضلك قم بتاكيد كلمة المرور</string>
+    <string name="passMatchat">كلمة المرور غير متطابقة</string>
+    <string name="EnterNamge">من فضلك قم بادخال  اسم المستخدم</string>
+    <string name="enterFirstName">من فضلك قم بادخال الاسم الاول</string>
+    <string name="enterLastName">من فضلك قم بادخال الاسم الاخير</string>
+
+    <string name="shortName">الاسم قصير </string>
+    <string name="EnterNumber">من فضلك قم بادخال رقم الجوال</string>
+    <string name="invalidNumber">رقم جوال غير صحيح</string>
+    <string name="EnterEmail">يرجى ادخال البريد الالكتروني</string>
+    <string name="invalidEmail">من فضلك قم بإدخال البريد الكتروني صحيح</string>
+
+    <string name="invalidName">من فضلك قم بإدخال اسم صحيح</string>
+    <string name="empity">من فضلك ادخل بيانات</string>
+    <!--- - - - - - - - -  - - - - - - - - - - - - -  -->
+    <string name="title_activity_maps">الخريطة</string>
+
+    <string name="gps_network_not_enabled">الشبكة غير مفعلة! تريد أن تذهب إلى القائمة؟</string>
+    <string name="open_location_settings">فتح إعدادات الموقع</string>
+    <string name="no">لا</string>
+    <string name="enterMapAddress">أدخل العنوان أو المدينة أو الرمز البريدي</string>
+
+    <string name="yes">نعم</string>
+    <string name="add">Add</string>
+    <string name="productInfo">Product Info</string>
+    <string name="addPhoto">Add photo</string>
+    <string name="productPhotos">Products Photos</string>
+    <string name="productName">ProductName</string>
+    <string name="productBarCode">Product barcode</string>
+    <string name="productDescription">Product description</string>
+    <string name="storeInfo">Store info</string>
+    <string name="storeName">Store name</string>
+    <string name="location">Location</string>
+    <string name="storeDescription">Store description</string>
+    <string name="sendReport">Send report</string>
+    <string name="reportProducts">Report product</string>
+    <string name="signUp">تسجيل دخول</string>
+    <string name="fullName">الاسم بالكامل</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="password">كلمة السر</string>
+    <string name="forgetPassword">نسيت كلمة المرور ؟</string>
+    <string name="login">دخول</string>
+    <string name="signin_as_guest">الدخول كزائر</string>
+    <string name="search">بحث</string>
+    <string name="computer_systems">Computer Systems</string>
+    <string name="desktop_computer">Desktop Computer</string>
+    <string name="adds_number">5 adds</string>
+    <string name="labtop">Laptop</string>
+    <string name="peripherals">Peripherals</string>
+    <string name="monitors">Monitors</string>
+    <string name="power_protection">Power Protection</string>
+    <string name="core_components">Core Components</string>
+    <string name="processors">CPUs/Processors</string>
+    <string name="memorys">Memorys</string>
+    <string name="accessories">Accessories</string>
+    <string name="motherboard">Motherboards</string>
+    <string name="computer_accessories">Computer Accessories</string>
+    <string name="cables">Cables</string>
+    <string name="my_ads">اعلاناتى</string>
+    <string name="settings">الاعداات</string>
+    <string name="specifications">SPECIFICATIONS</string>
+    <string name="product_specifications">• Intel Core i3 8th Gen 8100 (3.60 GHz) • 8 GB DDR4 • 1 TB HDD • Windows 10 Home 64-bit • No Screen • Intel UHD Graphics 630</string>
+    <string name="description">Description</string>
+    <string name="product_description"><![CDATA[Free your creativity and productivity! Powered by the latest generation Intel Core processor and generous amount of RAM, this Aspire TC-865 desktop empowers you to breeze through even the most demanding of tasks—like editing home videos and compiling photo albums. The elegant black housing offers front-panel media access with conveniently placed ports including two USB 3.1 Gen2 (one Type-A, one Type-C), each with up to 10Gbps bus bandwidth. 802.11ac offers fast Wi-Fi speed, and Bluetooth makes it easy to sync with your mobile devices or use Bluetooth peripherals. A DVD writer is pre-installed, which will come in handy when it comes to installing OS & programs or help for backing up your files.]]></string>
+    <string name="advertiser_name">Advertiser Name</string>
+    <string name="advertiser">jakob.tromp@reece.com</string>
+    <string name="addAdd">اضف اعلان</string>
+    <string name="name"> الاسم</string>
+    <string name="title">العنوان</string>
+
+    <string name="userNameLength">من فضلك ادخل حروف من 3 الى 30</string>
+    <string name="spaceValidation">غير مسموح بالمسافات</string>
+    <string name="categories">التصنيفات</string>
+
+    <string name="shortPass">يجب على كلمة المرور أن تحتوي على 8 حروف على الأقل</string>
+    <string name="loginError">اسم المستخدم او الرقم السرى خطا</string>
+    <string-array name="gender">
+        <item>النوع</item>
+        <item>ذكر</item>
+        <item>انثى</item>
+
+    </string-array>
+    <string-array name="categories">
+        <item>التصنيفات</item>
+        <item>Computer Systems</item>
+        <item>أنظمة الكمبيوتر</item>
+        <item>المكونات الأساسية</item>
+        <item>إكسسوارات</item>
+
+    </string-array>
+
+
+</resources>

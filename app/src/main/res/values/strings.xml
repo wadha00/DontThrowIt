@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">DontThrowIt</string>
+    <string name="home">Home</string>
+    <string name="scan">Scan</string>
+    <string name="more">More</string>
+
+    <string name="PermissionGranted">Permission granted</string>
+    <string name="PermissionDenied">Permission denied</string>
+    <string name="makeUp">Makeup</string>
+    <string name="perfumes">Perfumes</string>
+    <string name="skinCare">Skin care</string>
+    <string name="hair">Hair</string>
+    <string name="makeUpSubTitle">lipstick,Foundatio, \n Eyeliner</string>
+    <string name="perfumesSubTitle">Perfume, badysplash, \n Eau de toilet,</string>
+    <string name="skinCareSubTitle"><![CDATA[Cleanser, BB&CC Cream, \n Masks & scrubs]]></string>
+    <string name="hairSubTitle">Shampoo, Conditioner, \n HairTratments</string>
+    <string name="myActivity">My activity</string>
+    <string name="historyScan">History scan</string>
+    <string name="other">Other</string>
+    <string name="aboutUs">About Us</string>
+    <string name="setting">Settings</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="shareApp">Share App</string>
+    <string name="rateApp">Rate the App</string>
+
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="appLanguage">Languages</string>
+    <string name="whoWeAre">Who We Are?</string>
+    <string name="whoWeAreSubTitle">Our Project Application is called (Don’t Throw it!). The main purpose for our project comes from it is name that we should not throw any unneeded item and help the people who are unable to get their needs in computers items with a suitable price. in addition we provide for the customer a method to check for the availability of any item related to computers components by scan the item barcode or searching by its name then read the description and contact the user who advertising that item in an easy way. Created by Wadha Al-Naser Ayat Abdulrahem Tasnem Al-Kandri Fatemah Al-Rumh Supervision Dr.Asmaa Al-Naqi</string>
+    <string name="OriginalProduct">Original Product</string>
+    <string name="successDetials">This product is a original product from the manufacturerYou can know more details if you pressing on the product details</string>
+    <string name="productDetails">Product details</string>
+    <string name="rescan">Rescan</string>
+    <string name="callUs">Call us</string>
+    <string name="send">Send</string>
+
+    <string name="messageText">Message text...</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="Email">Email</string>
+    <!--- - - - - - - - - validation - - - - - - - - - - - - -  -->
+
+    <string name="EnterPass">Enter the password</string>
+    <string name="invalidPass">Invalid password</string>
+
+    <string name="passConfirm">Enter confirm password</string>
+    <string name="passMatchat">Password not matching</string>
+    <string name="EnterNamge">Enter Your  userName</string>
+    <string name="enterFirstName">Enter Your First Name</string>
+    <string name="userNameLength">Please enter letters from 3 to 30</string>
+    <string name="spaceValidation">No space allowed</string>
+    <string name="shortPass">Password must contain at least 8 characters</string>
+    <string name="loginError">User name or password is error</string>
+    <string name="enterLastName">Enter Your Last Name</string>
+
+    <string name="shortName">The name is too short</string>
+    <string name="EnterNumber">Enter your phone number</string>
+    <string name="invalidNumber">Invalid phone number</string>
+    <string name="EnterEmail">Enter the email address</string>
+    <string name="invalidEmail">Please enter a valid email</string>
+
+    <string name="invalidName">Invalid User Name</string>
+    <string name="empity">Please enter data</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="gps_network_not_enabled">Network is not enapled! want to go to setting menu?</string>
+    <string name="open_location_settings">open location settings</string>
+
+    <!--- - - - - - - - - - - - - - - - - - - - - - -  -->
+
+
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+
+    <string name="enterMapAddress">Enter the address, city, or postal code</string>
+    <string name="add">Add</string>
+
+    <string name="productInfo">Product Info</string>
+    <string name="addPhoto">Add photo</string>
+    <string name="productPhotos">Products Photos</string>
+    <string name="productName">ProductName</string>
+    <string name="productBarCode">Product barcode</string>
+    <string name="productDescription">Product description</string>
+    <string name="storeInfo">Store info</string>
+    <string name="storeName">Store name</string>
+    <string name="location">Location</string>
+    <string name="storeDescription">Store description</string>
+    <string name="sendReport">Send report</string>
+    <string name="reportProducts">Report product</string>
+    <string name="signUp">SignUp</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgetPassword">Forgot password ?</string>
+    <string name="login">Login</string>
+    <string name="signin_as_guest">Sign In as a Guest</string>
+    <string name="search">search</string>
+    <string name="computer_systems">Computer Systems</string>
+    <string name="desktop_computer">Desktop Computer</string>
+    <string name="adds_number">5 adds</string>
+    <string name="labtop">Laptop</string>
+    <string name="peripherals">Peripherals</string>
+    <string name="monitors">Monitors</string>
+    <string name="power_protection">Power Protection</string>
+    <string name="core_components">Core Components</string>
+    <string name="processors">CPUs/Processors</string>
+    <string name="memorys">Memorys</string>
+    <string name="accessories">Accessories</string>
+    <string name="motherboard">Motherboards</string>
+    <string name="computer_accessories">Computer Accessories</string>
+    <string name="cables">Cables</string>
+    <string name="my_ads">My Ads</string>
+    <string name="settings">Settings</string>
+    <string name="specifications">SPECIFICATIONS</string>
+    <string name="product_specifications">• Intel Core i3 8th Gen 8100 (3.60 GHz) \n • 8 GB DDR4 \n • 1 TB HDD \n • Windows 10 Home 64-bit \n • No Screen \n • Intel UHD Graphics 630</string>
+    <string name="description">Description</string>
+    <string name="product_description"><![CDATA[Free your creativity and productivity! Powered by the latest generation Intel Core processor and generous amount of RAM, this Aspire TC-865 desktop empowers you to breeze through even the most demanding of tasks—like editing home videos and compiling photo albums. The elegant black housing offers front-panel media access with conveniently placed ports including two USB 3.1 Gen2 (one Type-A, one Type-C), each with up to 10Gbps bus bandwidth. 802.11ac offers fast Wi-Fi speed, and Bluetooth makes it easy to sync with your mobile devices or use Bluetooth peripherals. A DVD writer is pre-installed, which will come in handy when it comes to installing OS & programs or help for backing up your files.]]></string>
+    <string name="advertiser_name">Advertiser Name</string>
+    <string name="advertiser">jakob.tromp@reece.com</string>
+    <string name="addAdd">Add Ad</string>
+    <string name="name">Name</string>
+    <string name="title">Title</string>
+    <string name="categories">categories</string>
+    <string-array name="categories">
+        <item>Categories</item>
+        <item>Computer Systems</item>
+        <item>Peripherals</item>
+        <item>Core Components</item>
+        <item>Accessories</item>
+
+    </string-array>
+
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

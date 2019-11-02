@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".fragment.MoreFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/more"
+            android:layout_marginStart="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/txt_my_ads"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/my_ads"
+              style="@style/more_sections_title"
+              android:drawableStart="@drawable/ic_icon_settings_ads"
+              android:drawablePadding="16dp"
+              android:gravity="center|start"
+              android:background="@android:color/white"
+              android:padding="16dp"
+              />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/other"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_aboutUsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_aboutUs"
+                    style="@style/more_sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_icon_settings_about_us"
+                    android:drawablePadding="16dp"
+                    android:gravity="center|start"
+                    android:text="@string/aboutUs" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="40dp"
+                    android:background="@color/gray">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_changeLanguage"
+                    style="@style/more_sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_icon_settings_settings"
+                    android:drawablePadding="16dp"
+                    android:gravity="center|start"
+                    android:text="@string/appLanguage" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="40dp"
+                    android:background="@color/gray">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_contactUs"
+                    style="@style/more_sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_icon_settings_contact_us"
+                    android:drawablePadding="16dp"
+                    android:gravity="center|start"
+                    android:text="@string/contactUs" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="40dp"
+                    android:background="@color/gray">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_shareApp"
+                    style="@style/more_sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_icon_settings_share"
+                    android:drawablePadding="16dp"
+                    android:gravity="center|start"
+                    android:text="@string/shareApp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="40dp"
+                    android:background="@color/gray">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_rateApp"
+                    style="@style/more_sections_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_icon_settings_rate_app"
+                    android:drawablePadding="16dp"
+                    android:gravity="center|start"
+                    android:text="@string/rateApp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="40dp"
+                    android:background="@color/gray">
+
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

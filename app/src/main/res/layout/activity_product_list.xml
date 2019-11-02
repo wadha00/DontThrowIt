@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".activity.ProductListActivity">
+    <!--start of appBarContainer-->
+    <RelativeLayout
+        android:id="@+id/BarContainer"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <TextView
+            android:id="@+id/appbar_title"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/iv_back"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/cocon_nextarabiclight_0"
+            android:layout_centerVertical="true"
+            android:text="Desktop Computer"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:onClick="onBackPress"
+            android:src="@drawable/ic_leftaction"
+
+
+            />
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"/>
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon_flash_copy"
+            android:layout_toStartOf="@id/img_add"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcy_products"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:padding="4dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BarContainer"
+        android:layout_margin="8dp" />
+</RelativeLayout>
