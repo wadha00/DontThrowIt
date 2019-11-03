@@ -6,7 +6,7 @@ import com.bumptech.glide.request.RequestOptions;
 
 
 /**
- * Created by mostafa kamal khedr on 16,September,2018
+
  */
 public class ImageDialog {
 

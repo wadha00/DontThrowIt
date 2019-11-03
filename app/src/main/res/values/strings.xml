@@ -52,6 +52,7 @@
     <string name="spaceValidation">No space allowed</string>
     <string name="shortPass">Password must contain at least 8 characters</string>
     <string name="loginError">User name or password is error</string>
+    <string name="loginFirst">You have to login first</string>
     <string name="enterLastName">Enter Your Last Name</string>
 
     <string name="shortName">The name is too short</string>
@@ -97,7 +98,7 @@
     <string name="search">search</string>
     <string name="computer_systems">Computer Systems</string>
     <string name="desktop_computer">Desktop Computer</string>
-    <string name="adds_number">5 adds</string>
+    <string name="adds_number">4 adds</string>
     <string name="labtop">Laptop</string>
     <string name="peripherals">Peripherals</string>
     <string name="monitors">Monitors</string>
@@ -121,20 +122,25 @@
     <string name="name">Name</string>
     <string name="title">Title</string>
     <string name="categories">categories</string>
+    <string name="advertiser_info">Advertiser info</string>
+
+    <string name="gender">gender</string>
+    <string name="readMore">Read more...</string>
+    <string name="logOut">Logout</string>
     <string-array name="categories">
-        <item>Categories</item>
         <item>Computer Systems</item>
         <item>Peripherals</item>
         <item>Core Components</item>
         <item>Accessories</item>
+        <item>Categories</item>
 
     </string-array>
 
 
     <string-array name="gender">
-        <item>Gender</item>
         <item>Male</item>
         <item>Female</item>
+        <item>Gender</item>
 
     </string-array>
 

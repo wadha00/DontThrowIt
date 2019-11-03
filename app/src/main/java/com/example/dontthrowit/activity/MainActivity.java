@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements BarcodeReader.Bar
         barcodeReader = (BarcodeReader) getSupportFragmentManager().findFragmentById(R.id.barcode_fragment);
 
         StatusBarUtil.setTransparent(MainActivity.this);
+        sharedPreferenceManager = new SharedPreferenceManager(MainActivity.this);
 
         init();
 
@@ -183,10 +184,20 @@ public class MainActivity extends AppCompatActivity implements BarcodeReader.Bar
                     homeFlActivityFrameContainer.setVisibility(View.VISIBLE);
                     return true;
                 case R.id.botm_nav_addAd:
-                    loadFragment(new AddAdFragment());
-                    scanContainer.setVisibility(View.GONE);
 
-                    homeFlActivityFrameContainer.setVisibility(View.VISIBLE);
+                    Boolean aBoolean = sharedPreferenceManager.loadUserSigned();
+
+                    if (aBoolean) {
+                        loadFragment(new AddAdFragment());
+                        scanContainer.setVisibility(View.GONE);
+
+                        homeFlActivityFrameContainer.setVisibility(View.VISIBLE);
+                    }else {
+                        Toast.makeText(MainActivity.this, getString(R.string.loginFirst), Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                        finish();
+
+                    }
                 /*    if (isPermissionGranted()) {
 
 
@@ -280,7 +291,6 @@ public class MainActivity extends AppCompatActivity implements BarcodeReader.Bar
     // report dialog when barcode is fake
 
     private void openFakeDialog() {
-        sharedPreferenceManager = new SharedPreferenceManager(MainActivity.this);
         final Dialog dialog2 = new Dialog(MainActivity.this);
 
         dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);

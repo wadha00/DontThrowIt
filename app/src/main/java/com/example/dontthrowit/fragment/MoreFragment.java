@@ -18,13 +18,16 @@ import androidx.fragment.app.Fragment;
 
 import com.example.dontthrowit.R;
 import com.example.dontthrowit.activity.ContactUsActivity;
+import com.example.dontthrowit.activity.LoginActivity;
 import com.example.dontthrowit.activity.MainActivity;
 import com.example.dontthrowit.helper.LanguageUtil;
 import com.example.dontthrowit.helper.SharedPreferenceManager;
 
+import butterknife.OnClick;
+
 
 /**
- *  * A simple {@link Fragment} subclass.
+ * * A simple {@link Fragment} subclass.
  */
 public class MoreFragment extends Fragment implements View.OnClickListener {
 
@@ -51,18 +54,31 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
     }
 
     private void init(View inflate) {
+
+        TextView txtMyAds = inflate.findViewById(R.id.txt_my_ads);
         TextView tvAboutUs = inflate.findViewById(R.id.tv_aboutUs);
         TextView tvChangeLanguage = inflate.findViewById(R.id.tv_changeLanguage);
 
         TextView tvContactUs = inflate.findViewById(R.id.tv_contactUs);
         TextView tvRateApp = inflate.findViewById(R.id.tv_rateApp);
         TextView tvShareApp = inflate.findViewById(R.id.tv_shareApp);
+        TextView tvLogOut = inflate.findViewById(R.id.tv_LogOut);
+        Boolean userSigned = sharedPreferenceManager.loadUserSigned();
+        if (userSigned){
+            tvLogOut.setVisibility(View.VISIBLE);
+            txtMyAds.setVisibility(View.VISIBLE);
 
+        }else {
+            tvLogOut.setVisibility(View.GONE);
+            txtMyAds.setVisibility(View.GONE);
+
+        }
         tvAboutUs.setOnClickListener(this);
         tvChangeLanguage.setOnClickListener(this);
         tvContactUs.setOnClickListener(this);
         tvRateApp.setOnClickListener(this);
         tvShareApp.setOnClickListener(this);
+        tvLogOut.setOnClickListener(this);
 
     }
 
@@ -86,7 +102,7 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.tv_rateApp:
 
-                                   rateApp();
+                rateApp();
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=ddg&c=apps&hl=en")));
                 break;
             case R.id.tv_shareApp:
@@ -95,13 +111,20 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
                 setShareApp();
 
                 break;
+            case R.id.tv_LogOut:
+
+
+                sharedPreferenceManager.saveUserIsSigned(false);
+                getActivity().startActivity(new Intent(getActivity(), LoginActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
+                break;
 
 
         }
     }
 
     private void rateApp() {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=ddg&c=apps&hl=en")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=dti&c=apps&hl=en")));
 
     }
 
@@ -138,11 +161,11 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
     }
 
     private void setShareApp() {
-        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
         String shareBody = "Here is the share content body";
-        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+        sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject Here");
+        sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
         startActivity(Intent.createChooser(sharingIntent, "Share via"));
 
 
@@ -168,4 +191,7 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
     }
 
 
+    @OnClick(R.id.tv_LogOut)
+    public void onViewClicked() {
+    }
 }

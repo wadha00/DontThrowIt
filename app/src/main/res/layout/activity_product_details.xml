@@ -27,6 +27,7 @@
             android:text="Acer Desktop Computer"
             android:maxLines="1"
             android:textStyle="bold"
+            android:maxLength="20"
             android:textColor="@android:color/white"
             android:textSize="20sp"/>
     </RelativeLayout>
@@ -77,7 +78,9 @@
                     android:id="@+id/txt_product_price"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
+                    android:textAlignment="viewEnd"
+
                     android:text="200 KD"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
@@ -133,6 +136,17 @@
                 android:text="@string/product_description"
                 android:textSize="16sp" />
 
+
+            <TextView
+                android:id="@+id/txt_product_readMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/readMore"
+                android:textSize="16sp" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
@@ -161,12 +175,13 @@
                 android:text="@string/advertiser"
                     android:textSize="16sp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_below="@id/txt_advertiser_title"/>
                 <ImageView
                     android:id="@+id/img_call"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
                     android:src="@drawable/ic_icon_phone"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"/>

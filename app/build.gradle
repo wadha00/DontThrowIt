@@ -18,10 +18,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    // Butterknife requires Java 8.
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    allprojects {
+        repositories {
+            jcenter()
+            maven {
+                url "https://jitpack.io"
+
+            }
+        }
     }
 }
 
@@ -45,8 +54,9 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.7.1'
 
 
+
     //image-cropper
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+    implementation 'com.github.svran:Android-Image-Cropper:2.8.0.4'
 
     //ButterKnife Dependency
     implementation 'com.jakewharton:butterknife:10.2.0'

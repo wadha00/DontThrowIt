@@ -1,14 +1,12 @@
 package com.example.dontthrowit.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.TextView;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,6 +16,7 @@ import com.example.dontthrowit.db.Products;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class ProductListActivity extends AppCompatActivity {
 
@@ -30,13 +29,16 @@ public class ProductListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_list);
+        ButterKnife.bind(this);
         inflateLayOut();
         setRecycler();
 
     }
+
     public void onBackPress(View view) {
         super.onBackPressed();
     }
+
     private void inflateLayOut() {
         ButterKnife.bind(this);
         category = getIntent().getStringExtra("category");
@@ -51,7 +53,7 @@ public class ProductListActivity extends AppCompatActivity {
     private void setRecycler() {
         Products products = new Products();
 
-        rcyProducts.setLayoutManager(new LinearLayoutManager(ProductListActivity.this, RecyclerView.VERTICAL,false));
+        rcyProducts.setLayoutManager(new LinearLayoutManager(ProductListActivity.this, RecyclerView.VERTICAL, false));
   /*      ItemOffsetDecoration itemDecoration = new ItemOffsetDecoration(ProductListActivity.this, R.dimen.item_offset);
         rcyProducts.addItemDecoration(itemDecoration);
 */
@@ -76,14 +78,19 @@ public class ProductListActivity extends AppCompatActivity {
         } else if (category.equals("Motherboards")) {
             productListAdapter = new ProductListAdapter(products.getMotherBoardList(), ProductListActivity.this);
 
-        }else if (category.equals("Cables")) {
+        } else if (category.equals("Cables")) {
             productListAdapter = new ProductListAdapter(products.getCablesList(), ProductListActivity.this);
 
-        }else if (category.equals("ComputerAccessories")) {
+        } else if (category.equals("ComputerAccessories")) {
             productListAdapter = new ProductListAdapter(products.getComputerAccessoriesList(), ProductListActivity.this);
 
         }
         rcyProducts.setAdapter(productListAdapter);
 
+    }
+
+    @OnClick(R.id.img_search)
+    public void onViewClicked() {
+        startActivity(new Intent(ProductListActivity.this, SearchActivity.class));
     }
 }

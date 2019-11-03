@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="@color/colorPrimary">
+
+        <SearchView
+            android:id="@+id/etxt_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_btn_search"
+            android:drawableStart="@drawable/ic_icon_search"
+            android:drawableEnd="@drawable/ic_bar_code_i"
+            android:drawablePadding="5dp"
+            android:hint="@string/search"
+            app:iconifiedByDefault="false"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcy_products"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:padding="4dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BarContainer"
+        android:layout_margin="8dp" />
+</LinearLayout>

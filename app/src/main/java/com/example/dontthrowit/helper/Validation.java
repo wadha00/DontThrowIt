@@ -8,7 +8,7 @@ import com.example.dontthrowit.R;
 
 
 /**
- * Created by Mostafa khedr on 02,1,2018
+
  */
 
 

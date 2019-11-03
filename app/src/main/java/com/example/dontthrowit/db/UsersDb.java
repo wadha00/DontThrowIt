@@ -77,7 +77,7 @@ public class UsersDb {
 
     public void saveAyatData() {
         SharedPreferences.Editor myEditor = sharedPreferences.edit();
-        myEditor.putString(Ayat_USERNAME, "Ayat Abdulrahem ");
+        myEditor.putString(Ayat_USERNAME, "Ayat Abdulrahem");
         myEditor.putString(Ayat_PASSWORD, "99364232");
         myEditor.putString(Ayat_EMAIL, "ayat.project19@gmail.com");
         myEditor.apply();
@@ -113,7 +113,7 @@ public class UsersDb {
 
     public void saveFatemahData() {
         SharedPreferences.Editor myEditor = sharedPreferences.edit();
-        myEditor.putString(Fatemah_USERNAME, "Fatemah Al-Rumh ");
+        myEditor.putString(Fatemah_USERNAME, "Fatemah Al-Rumh");
         myEditor.putString(Fatemah_PASSWORD, "94900811");
         myEditor.putString(Fatemah_EMAIL, "fatemah.project19@gmail.com");
         myEditor.apply();
@@ -161,10 +161,10 @@ public class UsersDb {
     public static List<Users> getUserName() {
         usersList = new ArrayList<>();
 
-        usersList.add(new Users("wadha.project19@gmail.com", "66696818"));
-        usersList.add(new Users("ayat.project19@gmail.com", "99364232"));
-        usersList.add(new Users(" tasnem.project19@gmail.com", "90903033"));
-        usersList.add(new Users(" fatemah.project19@gmail.com", "94900811"));
+        usersList.add(new Users("wadha.project19@gmail.com", "wadha12345600"));
+        usersList.add(new Users("ayat.project19@gmail.com", "ayat12345600"));
+        usersList.add(new Users(" tasnem.project19@gmail.com", "tasnem12345600"));
+        usersList.add(new Users(" fatemah.project19@gmail.com", "fatemah12345600"));
         return usersList;
     }
 }

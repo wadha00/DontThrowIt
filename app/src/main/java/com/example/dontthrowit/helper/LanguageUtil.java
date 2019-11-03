@@ -6,7 +6,7 @@ import android.content.res.Configuration;
 import java.util.Locale;
 
 /**
- * Created by sas on 10/04/2018.
+
  */
 
 public class LanguageUtil {

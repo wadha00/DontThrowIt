@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 /**
- * Created by mostafa kamal khedr on 25,December,2018
+
  */
 public class HideKeyBoard {
 

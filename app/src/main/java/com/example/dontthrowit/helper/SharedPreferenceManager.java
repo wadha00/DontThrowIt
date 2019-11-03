@@ -34,6 +34,17 @@ public class SharedPreferenceManager {
         sharedPreferences = context.getSharedPreferences(SharedPreferenceManager.PREFS, context.MODE_PRIVATE);
 
     }
+    public void saveUserIsSigned( Boolean isSigned) {
+        SharedPreferences.Editor myEditor = sharedPreferences.edit();
+
+        myEditor.putBoolean(USER_SIGNED_IN, isSigned);
+
+
+
+        myEditor.apply();
+        myEditor.commit();
+
+    }
 
 
     public void saveLanguage(String code) {

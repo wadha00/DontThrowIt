@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.dontthrowit.R;
 import com.example.dontthrowit.activity.ProductListActivity;
+import com.example.dontthrowit.activity.SearchActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -187,24 +188,8 @@ public class HomeFragment extends Fragment {
     }
 
 
-/*    @OnClick({R.id.makeup_container, R.id.perfumes_container, R.id.skinCare_container, R.id.hair_container})
-    public void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.makeup_container:
-                getActivity().startActivity(new Intent(getActivity(), ProductListActivity.class).putExtra("category", "Makeup"));
-                break;
-            case R.id.perfumes_container:
-                getActivity().startActivity(new Intent(getActivity(), ProductListActivity.class).putExtra("category", "Perfume"));
-
-                break;
-            case R.id.skinCare_container:
-                getActivity().startActivity(new Intent(getActivity(), ProductListActivity.class).putExtra("category", "Skin Care"));
-
-                break;
-            case R.id.hair_container:
-                getActivity().startActivity(new Intent(getActivity(), ProductListActivity.class).putExtra("category", "Hair"));
-
-                break;
-        }
-    }*/
+    @OnClick(R.id.etxt_search)
+    public void onViewClicked() {
+        startActivity(new Intent(getActivity(), SearchActivity.class));
+    }
 }

@@ -94,7 +94,7 @@ public class AddAdFragment extends Fragment {
         //      start of  inflate appBar layout
 
         TextView aboutUserAppBarTitle = inflate.findViewById(R.id.appbar_title);
-        aboutUserAppBarTitle.setText(R.string.reportProducts);
+        aboutUserAppBarTitle.setText(R.string.addAdd);
         ImageView back = inflate.findViewById(R.id.iv_back);
 
     }

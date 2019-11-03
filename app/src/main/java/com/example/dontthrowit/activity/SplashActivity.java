@@ -15,28 +15,35 @@ import java.util.Locale;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private SharedPreferenceManager sharedPreferenceManager;
+    private Boolean loadUserSigned;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         StatusBarUtil.setTransparent(SplashActivity.this);
-
+        sharedPreferenceManager = new SharedPreferenceManager(SplashActivity.this);
+        loadUserSigned = sharedPreferenceManager.loadUserSigned();
         setAppLanguage();
 
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, LoginActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
-                finish();
-
+                if (loadUserSigned) {
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    finish();
+                } else {
+                    startActivity(new Intent(SplashActivity.this, LoginActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                    finish();
+                }
             }
         }, 3000);
 
     }
 
     private void setAppLanguage() {
-        SharedPreferenceManager sharedPreferenceManager = new SharedPreferenceManager(SplashActivity.this);
         LanguageUtil languageUtil = new LanguageUtil(SplashActivity.this);
         if (sharedPreferenceManager.loadLanguage() != null) {
 

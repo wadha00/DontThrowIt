@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.dontthrowit.R;
 import com.example.dontthrowit.db.UsersDb;
+import com.example.dontthrowit.helper.SharedPreferenceManager;
 import com.example.dontthrowit.helper.Validation;
 import com.example.dontthrowit.model.Users;
 
@@ -38,6 +39,7 @@ public class SignUpActivity extends AppCompatActivity {
     @BindView(R.id.img_Signin)
     Button imgSignin;
     private Validation validation;
+    private SharedPreferenceManager sharedPreferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void init() {
+        sharedPreferenceManager = new SharedPreferenceManager(SignUpActivity.this);
         validation = new Validation(SignUpActivity.this);
 
     }
@@ -69,7 +72,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                 View v = super.getView(position, convertView, parent);
                 if (position == getCount()) {
-                    ((TextView) v.findViewById(android.R.id.text1)).setText("select your speciality");
+                    ((TextView) v.findViewById(android.R.id.text1)).setText(getText(R.string.gender));
                     ((TextView) v.findViewById(android.R.id.text1)).setHint(getItem(getCount())); //"Hint to be displayed"
                 }
 
@@ -127,6 +130,7 @@ public class SignUpActivity extends AppCompatActivity {
             List<Users> userName = UsersDb.getUserName();
 
             UsersDb.saveUserName(new Users(edtuserName, password, email, ""));
+            sharedPreferenceManager.saveUserIsSigned(true);
             startActivity(new Intent(SignUpActivity.this, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
             finish();
         }

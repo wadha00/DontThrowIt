@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,25 +17,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.dontthrowit.R;
+import com.example.dontthrowit.activity.ProductDetailsActivity;
 import com.example.dontthrowit.helper.ImageDialog;
 import com.example.dontthrowit.model.ProductsModel;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by mostafa kamal khedr on 09,July,2019
+
  */
-public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.ViewHolder> {
+public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.ViewHolder> implements Filterable {
 
 
+    private List<ProductsModel> mArrayList;
     private List<ProductsModel> productsModelList;
     private Context context;
+    private List<ProductsModel> items;
 
-    public ProductListAdapter(List<ProductsModel> productsModelList, Context context) {
-        this.productsModelList = productsModelList;
+    public ProductListAdapter(List<ProductsModel> arrayList, Context context) {
+        this.productsModelList = arrayList;
+        this.mArrayList = arrayList;
         this.context = context;
     }
 
@@ -66,7 +74,10 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
 
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(productLink)));
+                int productPosition = productsModelList.get(position).getPosition();
+                context.startActivity(new Intent(context, ProductDetailsActivity.class).putExtra("position",productPosition));
+
+
 
             }
         });
@@ -78,6 +89,46 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
     @Override
     public int getItemCount() {
         return productsModelList.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+
+                String charString = charSequence.toString();
+
+                if (charString.isEmpty()) {
+
+                    productsModelList = mArrayList;
+                } else {
+
+                    ArrayList<ProductsModel> filteredList = new ArrayList<>();
+
+                    for (ProductsModel productList : mArrayList) {
+
+                        if (productList.getProductName().toLowerCase().contains(charString) || productList.getDay().toLowerCase().contains(charString) || productList.getProductPrice().toLowerCase().contains(charString)) {
+
+                            filteredList.add(productList);
+                        }
+                    }
+
+                    productsModelList = filteredList;
+                }
+
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = productsModelList;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                productsModelList = (ArrayList<ProductsModel>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
