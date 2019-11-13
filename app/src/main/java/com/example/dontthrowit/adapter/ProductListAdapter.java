@@ -29,7 +29,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
-
+ *
  */
 public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.ViewHolder> implements Filterable {
 
@@ -57,7 +57,15 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
-        int productImage = productsModelList.get(position).getProductImage();
+        if (productsModelList.get(position).getProductImage2()==null){
+            int productImage = productsModelList.get(position).getProductImage();
+            Glide.with(context).load(productImage).apply(ImageDialog.getRequestOption())
+                    .into(viewHolder.imgCategoryList);
+        }else {
+            String productImage = productsModelList.get(position).getProductImage2();
+            Glide.with(context).load(productImage).apply(ImageDialog.getRequestOption())
+                    .into(viewHolder.imgCategoryList);
+        }
         final String productLink = productsModelList.get(position).getProductLink();
         String productName = productsModelList.get(position).getProductName();
         String productPrice = productsModelList.get(position).getProductPrice();
@@ -65,8 +73,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         viewHolder.txtDeviceDay.setText(day);
         viewHolder.txtDevicePrice.setText(productPrice);
 
-        Glide.with(context).load(productImage).apply(ImageDialog.getRequestOption())
-                .into(viewHolder.imgCategoryList);
+
 
         viewHolder.txtDeviceName.setText(productName);
 
@@ -75,8 +82,9 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
             @Override
             public void onClick(View v) {
                 int productPosition = productsModelList.get(position).getPosition();
-                context.startActivity(new Intent(context, ProductDetailsActivity.class).putExtra("position",productPosition));
-
+                if (productPosition != -1) {
+                    context.startActivity(new Intent(context, ProductDetailsActivity.class).putExtra("position", productPosition));
+                }
 
 
             }

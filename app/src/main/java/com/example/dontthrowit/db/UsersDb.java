@@ -153,13 +153,13 @@ public class UsersDb {
 
     public static void saveUserName(Users users) {
 
-
+        usersList = new ArrayList<>();
         usersList.add(users);
 
     }
 
     public static List<Users> getUserName() {
-        usersList = new ArrayList<>();
+
 
         usersList.add(new Users("wadha.project19@gmail.com", "wadha12345600"));
         usersList.add(new Users("ayat.project19@gmail.com", "ayat12345600"));

@@ -3,6 +3,8 @@ package com.example.dontthrowit.helper;
 import android.content.Context;
 import android.text.TextUtils;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.dontthrowit.R;
 
@@ -39,6 +41,21 @@ public class Validation {
         String text = EditText.getText().toString();
 
         if (TextUtils.isEmpty(text)) {
+            EditText.setError(context.getResources().getString(R.string.empity));
+            EditText.requestFocus();
+            return false;
+        } else {
+
+            return true;
+        }
+
+
+    }   //  this method to validate any editText for not null
+    public boolean setImageValidation(TextView EditText, String s) {
+
+
+
+        if (TextUtils.isEmpty(s)) {
             EditText.setError(context.getResources().getString(R.string.empity));
             EditText.requestFocus();
             return false;

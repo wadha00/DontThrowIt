@@ -8,6 +8,16 @@ import java.io.Serializable;
 public class ProductsModel implements Serializable {
 
     private int productImage;
+    private String productImage2;
+
+    public String getProductImage2() {
+        return productImage2;
+    }
+
+    public void setProductImage2(String productImage2) {
+        this.productImage2 = productImage2;
+    }
+
     private String productName;
     private String productLink;
     private String productPrice;
@@ -101,6 +111,14 @@ public class ProductsModel implements Serializable {
 
     public ProductsModel(int position, String id, String productName, int productImage, String productLink, String productPrice, String day) {
         this.productImage = productImage;
+        this.productName = productName;
+        this.productLink = productLink;
+        this.productPrice = productPrice;
+        this.day = day;
+        this.id = id;
+        this.position = position;
+    }    public ProductsModel(int position, String id, String productName, String productImage, String productLink, String productPrice, String day) {
+        this.productImage2 = productImage;
         this.productName = productName;
         this.productLink = productLink;
         this.productPrice = productPrice;

@@ -3,6 +3,7 @@ package com.example.dontthrowit.db;
 
 import com.example.dontthrowit.R;
 import com.example.dontthrowit.model.ProductsModel;
+import com.example.dontthrowit.model.Users;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,7 @@ public class Products {
     public static String product1 = "3610340017421";
     public static String product2 = "6281006442924";
     public static String product3 = "888066000079";
+    public static List<ProductsModel> myAdd;
 
 
     //Computer System
@@ -309,9 +311,9 @@ public List<ProductsModel> getCablesList() {
                 "1000 $ = 303 KD",
                 "2Oct",
                 "HP EliteOne 800 G4 All-in-One Computer - Intel Core i5 (8th Gen) i5-8500 3.00 GHz - 8 GB DDR4 - 256 GB SSD - 23.8 FHD IPS Anti-glare - Windows 10 Pro 64-Bit (English)",
-                "Ayat Abdulrahem",
-                "ayat.project19@gmail.com",
-                "99364232",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•Intel Core i5 8th Gen 8500 (3.00 GHz)\n" +
                         "•8 GB DDR4 256 GB SSD\n" +
                         "•23.8\" 1920 x 1080\n" +
@@ -325,9 +327,9 @@ public List<ProductsModel> getCablesList() {
                 "2000 $ = 606 KD",
                 "3Oct",
                 "ABS Mage H - Intel i9-9900K - GeForce RTX 2080 Super - 16GB DDR4 - 1TB SSD - Liquid Cooling 240mm - Gaming Desktop PC",
-                "Tasnem Al-Kandri",
-                "tasnem.project19@gmail.com",
-                "90903033",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•Intel Core i9 9th Gen 9900K (3.60 GHz) \n" +
                         "•NVIDIA GeForce RTX 2080 SUPER 8GB \n" +
                         "•16GB DDR4 \n" +
@@ -344,9 +346,9 @@ public List<ProductsModel> getCablesList() {
                 "700 $ = 212 KD",
                 "4Oct",
                 "Acer All-in-One Computer Aspire C24-865-UR12 Intel Core i5 8th Gen 8250U (1.60 GHz) 8 GB DDR4 1 TB HDD 23.8\" Windows 10 Home 64-bit",
-                "Fatemah Al-Rumh",
-                "fatemah.project19@gmail.com",
-                "94900811",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•Intel Core i5 8th Gen 8250U (1.60 GHz)\n" +
                         "•8 GB DDR4 1 TB HDD\n" +
                         "•23.8\" 1920 x 1080\n" +
@@ -364,9 +366,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/platinum-gray-lenovo-ideapad-330-81d2005cus-mainstream/p/N82E16834850877",
                 "500 $ = 150 KD", "1Dec",
                 "Lenovo Laptop IdeaPad 330 81D2005CUS AMD Ryzen 5 1st Gen 2500U (2.00 GHz) 8 GB Memory 256 GB SSD AMD Radeon Vega 8 15.6\" Windows 10 Home 64-Bit",
-                "mazen AHMED",
-                "mazenAHMED@gmail.com",
-                "",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•AMD Ryzen 5 2500U (2.00 GHz)\n" +
                         "•8 GB Memory 256 GB SSD\n" +
                         "•AMD Radeon Vega 8\n" +
@@ -382,9 +384,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/charcoal-black-acer-aspire-5-a515-54g-70tz-mainstream/p/N82E16834316759",
                 "700 $ = 212 KD", "2Dec",
                 "Lenovo Laptop IdeaPad 330 81D2005CUS AMD Ryzen 5 1st Gen 2500U (2.00 GHz) 8 GB Memory 256 GB SSD AMD Radeon Vega 8 15.6\" Windows 10 Home 64-Bit",
-                "khaled nabawy",
-                "khaledNabawy@gmail.com",
-                "",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•Intel Core i7 8th Gen 8565U (1.80 GHz)\n" +
                         "•8 GB Memory 512 GB SSD\n" +
                         "•NVIDIA GeForce MX250\n" +
@@ -397,9 +399,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/natural-silver-hp-probook-450-g6-mainstream/p/1TS-000D-037B2",
                 "860 $ = 260 KD", "3Dec",
                 "HP Laptop ProBook 450 G6 5YH15UT#ABA Intel Core i7 8th Gen 8565U (1.80 GHz) 16 GB Memory 256 GB SSD NVIDIA GeForce MX130 15.6\" Windows 10 Pro 64-bit",
-                "ahmed mohamed",
-                "ahmed.mohamed@gmail.com",
-                "95412588",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•Intel Core i7 8th Gen 8565U (1.80 GHz)\n" +
                         "•16 GB Memory 256 GB SSD\n" +
                         "•NVIDIA GeForce MX130\n" +
@@ -412,9 +414,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/black-microsoft-surface-pro-6-nkr-00001/p/N82E16834735993",
                 "800 $ = 242 KD", "4Dec",
                 "Microsoft Surface Pro 6 NKR-00001 2-in-1 Laptop Intel Core i5-8250U 1.60 GHz 12.3\" Windows 10 Home 64-bit - With Keyboard - Black",
-                "mohammed mahmoud",
-                "mohammed@gmail.com",
-                "95412588",
+                "Wadha Al-Naser",
+                "wadha.project19@gmail.com",
+                "66696818",
                 "•Intel Core i5 8th Gen 8250U (1.60 GHz)\n" +
                         "•8 GB Memory 128 GB SSD\n" +
                         "•Intel UHD Graphics 620\n" +
@@ -430,9 +432,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/dark-blue-black-samsung-cfg70-series-lc27fg73fqnxza-27/p/N82E16824022684",
                 "330 $ = 100 KD", "1Oct",
                 "Samsung CFG70 Series C27FG73 27\" Curved Monitor, 16:9, 3000:1, FHD, 144Hz, 1ms, QLED, AMD FreeSync, DP, 2xHDMI, VESA",
-                "assmaa mohammed",
-                "assmaa.mohammed@gmail.com",
-                "9851236",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "Redefine your gaming experience\n" +
                         "Curved and super-fast\n" +
                         "Uninterrupted, flaw-free gaming\n" +
@@ -446,9 +448,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16824005700",
                 "340 $ = 103 KD", "2Oct",
                 "LG 34UM64-P 34\" Quad HD 2560x1080 2K Resolution 60Hz 5ms DVI-D 2xHDMI DisplayPort 4-Screen Split Flicker-Safe Built-in Speakers UltraWide LED Backlit IPS Monitor",
-                "Jehad ahmed",
-                "Jehad.ahmed@gmail.com",
-                "9845122",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "2560 x 1080 Quad HD 2K Resolution @ 60Hz\n" +
                         "5ms Response Time\n" +
                         "DVI-D, DisplayPort, 2 x HDMI Video Inputs\n" +
@@ -468,9 +470,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16824475031",
                 "2000 $ = 606 KD", "3Oct",
                 "MSI Optix MAG271R 27\" Full HD Resolution 165Hz Refresh Rate 1ms Response Time AMD FreeSync Technology Anti-Flicker Anti-Glare Frameless Design Gaming Monitor",
-                "eman khaled",
-                "eman.khaled@gmail.com",
-                "6541233",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "Full HD 1920 x 1080 Resolution\n" +
                         "1ms Response Time\n" +
                         "165Hz Refresh Rate\n" +
@@ -489,9 +491,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/black-benq-zowie-xl-series-xl2731-27/p/N82E16824014657",
                 "300 $ = 90 KD", "4Oct",
                 "BenQ ZOWIE XL2731 27\" Full HD 1920x1080 1ms 144Hz DVI-D HDMI DisplayPort e-Sports Gaming Monitor",
-                "walaaa amgad",
-                "walaaa.amgad@gmail.com",
-                "45897444",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "1920 x 1080 Full HD Resolution\n" +
                         "1ms Response Time\n" +
                         "144Hz Refresh Rate\n" +
@@ -512,9 +514,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/apc-br1500ms-4-x-nema-5-15r-6-x-nema-5-15r/p/N82E16842301700",
                 "204 $ = 61 KD", "1Dec",
                 "APC BR1500MS 1500 VA Pure SineWave 10 Outlets 2 USB Charging Ports Back-UPS Pro Battery Backup, Replaces BR1500G",
-                "afnan mazen",
-                "afnan.mazen@gmail.com",
-                "2354879",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "1500 VA / 900 Watts\n" +
                         "10 Total Outlets: 6 Outlets provide UPS Battery Backup and Surge Protection; 4 Outlets offer Surge Protection Only\n" +
                         "Sine Wave battery output is compatible with Modern Computers using Active PFC Power Supplies\n" +
@@ -529,9 +531,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/cyberpower-or2200lcdrtxl2u-nema-5-20r/p/N82E16842102121",
                 "550 $ = 166 KD", "2Dec",
                 "CyberPower Smart App LCD OR2200LCDRTXL2U 2190 VA 1650 W 8 Outlets UPS\n",
-                "neama mwtwaly",
-                "neama.mwtwaly@gmail.com",
-                "54411189",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
 "2190VA / 1650W Simulated Sine Wave UPS\n" +
         "2U Rack Mount/Tower Convertible\n" +
         "8 Outlets / USB and Serial Ports\n" +
@@ -545,9 +547,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/tripp-lite-powerverter-pv150-120v-ac-60hz/p/N82E16812120305",
                 "35 $ = 10 KD", "3Oct",
                 "Tripp Lite 150 W Car Power Inverter with 1 Outlet, Auto Inverter, Ultra Compact (PV150)",
-                "sara ahmed",
-                "sara.ahmed@gmail.com",
-                "",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "Converts 12 V DC battery power to 120 V AC power\n" +
                         "Runs smartphones, laptops, tablets, portable TVs, DVD players, MP3 players and other electronics\n" +
                         "150 watts continuous output; 300 watts peak output power (instantaneous)\n" +
@@ -560,9 +562,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/rosewill-capstone-series-capstone-550m-550w/p/N82E16817182262",
                 "85 $ = 25 KD", "4Oct",
                 "Rosewill CAPSTONE 550M 550W Modular Power Supply (80 PLUS GOLD Certified)",
-                "khaled mostafa",
-                "khaled.mostafa@gmail.com",
-                "235468",
+                "Ayat Abdulrahem",
+                "ayat.project19@gmail.com",
+                "99364232",
                 "550W Power Supply\n" +
                         "80 PLUS GOLD Certified PSU\n" +
                         "ATX 12V v2.31 / EPS 12V v2.92\n" +
@@ -578,9 +580,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/core-i9-9th-gen-intel-core-i9-9900k/p/N82E16819117957?Item=N82E16819117957",
                 "485 $ = 147 KD", "1Sep",
                 "Intel Core i9-9900K Coffee Lake 8-Core, 16-Thread, 3.6 GHz (5.0 GHz Turbo) LGA 1151 (300 Series) 95W BX80684I99900K Desktop Processor Intel UHD Graphics 630",
-                "mahmoud ali",
-                "mahmoud@gmail.com",
-                "45871152",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "9th Gen Intel Processor\n" +
                         "Intel UHD Graphics 630\n" +
                         "Only Compatible with Intel 300 Series Motherboard\n" +
@@ -597,9 +599,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/amd-ryzen-7-3800x/p/N82E16819113104?Item=N82E16819113104",
                 "370 $ = 112 KD", "2Oct",
                 "AMD RYZEN 7 3800X 8-Core 3.9 GHz (4.5 GHz Max Boost) Socket AM4 105W 100-100000025BOX Desktop Processor",
-                "mazen khaled",
-                "mazen.khaled@gmail.com",
-                "90147855",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "3rd Gen Ryzen\n" +
                         "Socket AM4\n" +
                         "Max Boost Frequency 4.5 GHz\n" +
@@ -615,9 +617,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/core-i7-9th-gen-intel-core-i7-9700k/p/N82E16819117958?Item=N82E16819117958",
                 "365 $ = 110 KD", "3Oct",
                 "Intel Core i7-9700K Coffee Lake 8-Core 3.6 GHz (4.9 GHz Turbo) LGA 1151 (300 Series) 95W BX80684I79700K Desktop Processor Intel UHD Graphics 630",
-                "mohammed ahmed",
-                "mohammed.ahmed@gmail.com",
-                "90147855",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "9th Gen Intel Processor\n" +
                         "Intel UHD Graphics 630\n" +
                         "Only Compatible with Intel 300 Series Motherboard\n" +
@@ -635,9 +637,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/amd-fx-8000-series-fx-8350-black-edition/p/N82E16819113284",
                 "200 $ = 60 KD", "4Oct",
                 "AMD FX-8350 Black Edition Vishera 8-Core 4.0 GHz (4.2 GHz Turbo) Socket AM3+ 125W FD8350FRHKBOX Desktop Processor",
-                "khaled mohammed",
-                "khaled.mohammed@gmail.com",
-                "0155444446",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "32nm Vishera 125W\n" +
                         "8MB L3 Cache\n" +
                         "8MB L2 Cache"));
@@ -648,9 +650,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/g-skill-16gb-288-pin-ddr4-sdram/p/N82E16820232498",
                 "85 $ = 25 KD", "1Sep",
                 "G.SKILL TridentZ RGB Series 16GB (2 x 8GB) 288-Pin DDR4 SDRAM DDR4 3000 (PC4 24000) Memory (Desktop Memory) Model F4-3000C16D-16GTZR",
-                "ahmed mohammed",
-                "ahmed.mohammed@gmail.com",
-                "0155444446",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "DDR4 3000 (PC4 24000)\n" +
                         "Timing 16-18-18-38\n" +
                         "CAS Latency 16\n" +
@@ -661,9 +663,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/team-32gb-288-pin-ddr4-sdram/p/N82E16820331362",
                 "110 $ = 33 KD", "2Oct",
                 "Team T-FORCE VULCAN Z 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3000 (PC4 24000) Desktop Memory Model TLZGD432G3000HC16CDC01",
-                "ahmed mohammed",
-                "ahmed.mohammed@gmail.com",
-                "0155444446",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "DDR4 3000 (PC4 24000)\n" +
                         "Timing 16-18-18-38\n" +
                         "CAS Latency 16\n" +
@@ -675,9 +677,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/crucial-16gb-260-pin-ddr4-so-dimm/p/0ZK-0070-00010",
                 "64 $ = 20 KD", "3Oct",
                 "Crucial 16GB Kit (8GBx2) DDR4 2400 MT/s (PC4-19200) 260-Pin SODIMM Memory - CT2K8G4SFS824A",
-                "ahmed mohammed",
-                "ahmed.mohammed@gmail.com",
-                "0155444446",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "Speeds start at 2133 MT/s and faster data rates are expected to be available as DDR4 technology matures\n" +
                         "Increase bandwidth by up to 30-Percent\n" +
                         "Reduce power consumption by up to 40-Percent and extend battery life\n" +
@@ -689,9 +691,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/kingston-16gb-260-pin-ddr4-so-dimm/p/N82E16820242417",
                 "70 $ = 21 KD", "4Oct",
                 "Kingston 16GB (1 x 16GB) DDR4 2400MHz DRAM (Notebook Memory) 1.2V SODIMM (260-Pin) KCP424SD8/16",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "Unbuffered\n" +
                         "Non-ECC\n" +
                         "100% Factory Tested at Speed\n" +
@@ -704,9 +706,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16813119204?Item=N82E16813119204",
                 "300 $ = 90 KD", "1Sep",
                 "ASUS Prime Z390-A/H10 Motherboard Bundled Intel Optane Memory H10 with Solid State Storage (32GB + 512GB) LGA1151 (Intel 8th and 9th Gen) ATX DDR4 DP HDMI M.2 USB 3.1 Gen2 Gigabit LAN",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "Intel Z390\n" +
                         "Intel Socket 1151 for 9th/8th Generation Core, Pentium / Celeron Processors\n" +
                         "DDR4 4266(O.C.)/ 2133 MHz\n" +
@@ -719,9 +721,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16813144264",
                 "100 $ = 30 KD", "2Oct",
                 "MSI B450 GAMING PLUS MAX AM4 AMD B450 SATA 6Gb/s ATX AMD Motherboard",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "AMD B450\n" +
                         "Supports 1st, 2nd and 3rd Gen AMD Ryzen, Ryzen with Radeon Vega Graphics, 2nd Gen AMD Ryzen with Radeon Graphics and Athlon with Radeon Vega Graphics Desktop Processors for Socket AM4\n" +
                         "For AMD Ryzen Gen3 (R5/R7/R9): Supports 4133/ 4000/ 3866/ 3733/ 3466/ 3200/ 3066/ 3000/ 2933/ 2800/ 2667 MHz (by A-XMP OC MODE)\n" +
@@ -734,9 +736,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16813145159",
                 "220 $ = 66 KD", "3Oct",
                 "GIGABYTE X570 I AORUS PRO WIFI AMD Ryzen 3000 PCIe 4.0 SATA 6Gb/s USB 3.2 AMD X570 Mini-ITX Motherboard",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "Supports AMD 3rd Gen Ryzen / 2nd Gen Ryzen / Ryzen with Radeon Vega Graphics Processors\n" +
                         "Dual Channel ECC / Non-ECC Unbuffered DDR4, 2 DIMMs\n" +
                         "Direct 8 Phases IR Digital VRM Solution with PowIRstage\n" +
@@ -755,9 +757,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/supermicro-mbd-x11ssv-q-o-intel-6th-generation-core-i3-series-intel-6th-generation-core-i5-series-in/p/N82E16813182990?Item=N82E16813182990",
                 "188 $ = 57 KD", "4Oct",
                 "SUPERMICRO MBD-X11SSV-Q-O Mini ITX Server Motherboard LGA 1151 Intel Q170",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Tasnem Al-Kandri",
+                "tasnem.project19@gmail.com",
+                "90903033",
                 "Intel 7th / 6th Gen. Core i3 series, Intel Celeron and Intel Pentium\n" +
                         "Intel Q170 Express chipset\n" +
                         "Up to 32GB Unbuffered Non-ECC SO-DIMM DDR4 2400 MHz; 2 x DIMM slots\n" +
@@ -770,9 +772,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/black-cyber-acoustics-acm-51b-3-5mm-connector/p/N82E16836150080",
                 "5 $ = 1.5 KD", "1Sep",
                 "Cyber Acoustics ACM-51B Black 3.5mm Connector Desktop Microphone",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "100-16K Hz\n" +
                         "3.5mm Connector"));
 
@@ -781,9 +783,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/logitech-wireless-combo-mk270-920-004536-usb-2-0-rf-wireless/p/N82E16823126332",
                 "22 $ = 6 KD", "2Sep",
                 "Logitech MK270 Wireless Keyboard and Mouse Combo 920-004536 - USB 2.0 RF Wireless Ergonomic Keyboard & Mouse",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "8 Function Keys\n" +
                         "USB 2.0 RF Wireless\n" +
                         "Logitech\n" +
@@ -795,9 +797,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/white-arctic-cooling-accel-l2-plus/p/N82E16835186053",
                 "22 $ = 6 KD", "3Sep",
                 "ARCTIC Accelero L2 Plus VGA Cooler - nVidia & AMD, 92mm Efficient PWM Fan, SLI/CrossFire\n",
-                "marawan younes",
-                "marawan.younes@gmail.com",
-                "1457888",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "ARCTIC Accelero L2 Plus VGA Cooler - nVidia & AMD, 92mm Efficient PWM Fan, SLI/CrossFire"));
 
 
@@ -806,9 +808,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/black-logitech-f310-gaming-pad/p/N82E16826104402?Description=pc%20game%20controller&cm_re=pc_game_controller-_-26-104-402-_-Product",
                 "22 $ = 6 KD", "4Sep",
                 "Logitech F310 (940-000110) Gamepad",
-                "khaled helal",
-                "khaled.helal@gmail.com",
-                "2457899",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "Familiar layout for easy navigation\n" +
                         "Exclusive 4-switch D-pad for better response\n" +
                         "Compatible with a variety of old and current games\n" +
@@ -822,9 +824,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/black-rosewill-6-feet-hdmi-cables/p/N82E16886228007",
                 "6 $ = 1.5 KD", "1Sep",
                 "Rosewill HDMI Pro-6 - 6-Foot Black High Speed HDMI Cable with 3D & 4K Supported, 10.2 Gbps Transfer Rate - Male to Male",
-                "khaled helal",
-                "khaled.helal@gmail.com",
-                "2457899",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "6 Foot Long HDMI Cable\n" +
                         "Male to Male / HDMI to HDMI\n" +
                         "Supports 3D and 4K Resolutions\n" +
@@ -836,9 +838,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16812423130",
                 "7 $ = 2 KD", "2Oct",
                 "Coboc CL-MDP2DVI-6-WH 6 ft. 32AWG Mini DisplayPort(Thunderbolt Compatible) Male to DVI-D(24+1) Male Passive Adatper Converter Cable,Gold Plated,White -mDP to DVI - 1920 x 1200 Resolution",
-                "khaled helal",
-                "khaled.helal@gmail.com",
-                "2457899",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "Mini DisplayPort to DVI Passive Converter Cable\n" +
                         "Requires a Dual-mode DisplayPort(DP++)source\n" +
                         "Compatible with Intel® Thunderbolt™\n" +
@@ -850,9 +852,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/p/N82E16812203018",
                 "10 $ = 3 KD", "3Oct",
                 "Sabrent USB 2.0 TO SERIAL DB9 MALE (9 PIN) RS232 CABLE ADAPTER 1 ft. Prolific Chipset (CB-RS232)",
-                "khaled helal",
-                "khaled.helal@gmail.com",
-                "2457899",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "2 Connector Number\n" +
                         "White\n" +
                         "Male to Male"));
@@ -863,9 +865,9 @@ public List<ProductsModel> getCablesList() {
                 "https://www.newegg.com/black-cables-to-go-6-ft-cable-connectors/p/N82E16812196453",
                 "10 $ = 3 KD", "4Oct",
                 "C2G 30823 14 AWG 250 Volt Power Extension Cord - IEC320C14 (C14) to IEC320C13 (C13), TAA Compliant, Black (6 Feet, 1.82 Meters)",
-                "nada adel",
-                "nada.adel@gmail.com",
-                "12547899",
+                "Fatemah Al-Rumh",
+                "fatemah.project19@gmail.com",
+                "94900811",
                 "TAA Compliant\n" +
                         "Fully molded cord for durability\n" +
                         "Allows you to extend the length of your current power cable"));
@@ -913,15 +915,15 @@ public List<ProductsModel> getCablesList() {
 
         List<String> barCodeList = new ArrayList<>();
 
-        barCodeList.add("3610340017421");
-        barCodeList.add("6281006442924");
-        barCodeList.add("888066000079");
+        barCodeList.add("1551660");
+        barCodeList.add("1551670");
+        barCodeList.add("1551680");
 
-        barCodeList.add("693102510166");     //OFRA Blissful Highlighter
-        barCodeList.add("693102820166");                 //OFRA Cosmetics Ofra X Manny MUA Lip Set
-        barCodeList.add("693102933880");                 //OFRA Eyeshadow Peach
-        barCodeList.add("843711216571");                 //OFRA Lipliner Mauve
-        barCodeList.add("843711217134");                 //OFRA Lipstick 101
+        barCodeList.add("1551690");     //OFRA Blissful Highlighter
+        barCodeList.add("1551660");                 //OFRA Cosmetics Ofra X Manny MUA Lip Set
+        barCodeList.add("1551760");                 //OFRA Eyeshadow Peach
+        barCodeList.add("1551860");                 //OFRA Lipliner Mauve
+        barCodeList.add("1551960");                 //OFRA Lipstick 101
         barCodeList.add("681619700583");                 //the Balm Mary-Lou Manizer Luminizer
         barCodeList.add("885291449741");                             //theBalm getönte Tagescreme Balm Shelter Tinted Moisturizer,Medium
         barCodeList.add("681619801013");                      //theBalm Manizer Kit
@@ -967,6 +969,33 @@ public List<ProductsModel> getCablesList() {
 
         return barCodeList;
     }
+
+
+    public static List<ProductsModel> getMyAddsList() {
+
+
+
+
+
+
+
+        return myAdd;
+    }
+
+    public static void saveMyAdd(ProductsModel productsModel) {
+
+        myAdd = new ArrayList<>();
+        myAdd.add(productsModel);
+
+    }
+    public static List<ProductsModel> getMyAdd() {
+
+
+        return myAdd;
+
+    }
+
+
 
 
 }

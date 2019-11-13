@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -20,8 +21,13 @@ import com.example.dontthrowit.R;
 import com.example.dontthrowit.activity.ContactUsActivity;
 import com.example.dontthrowit.activity.LoginActivity;
 import com.example.dontthrowit.activity.MainActivity;
+import com.example.dontthrowit.activity.MyAddsActivity;
+import com.example.dontthrowit.db.Products;
 import com.example.dontthrowit.helper.LanguageUtil;
 import com.example.dontthrowit.helper.SharedPreferenceManager;
+import com.example.dontthrowit.model.ProductsModel;
+
+import java.util.List;
 
 import butterknife.OnClick;
 
@@ -58,17 +64,27 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
         TextView txtMyAds = inflate.findViewById(R.id.txt_my_ads);
         TextView tvAboutUs = inflate.findViewById(R.id.tv_aboutUs);
         TextView tvChangeLanguage = inflate.findViewById(R.id.tv_changeLanguage);
-
+        txtMyAds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                List<ProductsModel> myAdd = Products.getMyAdd();
+                if (myAdd != null&&myAdd.size() > 0 ) {
+                    startActivity(new Intent(getActivity(), MyAddsActivity.class));
+                }else {
+                    Toast.makeText(getActivity(), getString(R.string.noAdd), Toast.LENGTH_LONG).show();
+                }
+            }
+        });
         TextView tvContactUs = inflate.findViewById(R.id.tv_contactUs);
         TextView tvRateApp = inflate.findViewById(R.id.tv_rateApp);
         TextView tvShareApp = inflate.findViewById(R.id.tv_shareApp);
         TextView tvLogOut = inflate.findViewById(R.id.tv_LogOut);
         Boolean userSigned = sharedPreferenceManager.loadUserSigned();
-        if (userSigned){
+        if (userSigned) {
             tvLogOut.setVisibility(View.VISIBLE);
             txtMyAds.setVisibility(View.VISIBLE);
 
-        }else {
+        } else {
             tvLogOut.setVisibility(View.GONE);
             txtMyAds.setVisibility(View.GONE);
 
@@ -115,6 +131,7 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
 
 
                 sharedPreferenceManager.saveUserIsSigned(false);
+
                 getActivity().startActivity(new Intent(getActivity(), LoginActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
 
                 break;
@@ -124,7 +141,7 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
     }
 
     private void rateApp() {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=dti&c=apps&hl=en")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/search?q=DTI&c=apps&hl=en")));
 
     }
 
@@ -193,5 +210,6 @@ public class MoreFragment extends Fragment implements View.OnClickListener {
 
     @OnClick(R.id.tv_LogOut)
     public void onViewClicked() {
+
     }
 }

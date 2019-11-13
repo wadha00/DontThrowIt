@@ -127,7 +127,7 @@ public class SignUpActivity extends AppCompatActivity {
             String email = edtEmail.getText().toString();
             String password = edtPassword.getText().toString();
             String edtuserName = edtUserName.getText().toString();
-            List<Users> userName = UsersDb.getUserName();
+//            List<Users> userName = UsersDb.getUserName();
 
             UsersDb.saveUserName(new Users(edtuserName, password, email, ""));
             sharedPreferenceManager.saveUserIsSigned(true);
